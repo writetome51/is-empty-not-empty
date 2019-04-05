@@ -1,0 +1,30 @@
+{
+  "name": "@writetome51/is-empty-not-empty",
+  "version": "1.0.0",
+  "description": "2 functions that check if passed argument has a 'length' property with a value of 0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/is-empty-not-empty.git"
+  },
+  "keywords": [
+    "is",
+    "empty",
+    "not",
+    "property",
+    "length",
+    "check",
+    "data-type"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/is-empty-not-empty/issues"
+  },
+  "homepage": "https://github.com/writetome51/is-empty-not-empty#readme",
+  "dependencies": {
+  }
+}
