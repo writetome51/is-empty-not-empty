@@ -1,9 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {value: true});
+var eIfNZOG = require('error-if-not-integer-zero-or-greater');
 
 
 function isEmpty(argWithLength) {
-	errorIfNotIntegerZeroOrGreater(argWithLength.length);
+
+	eIfNZOG.errorIfNotIntegerZeroOrGreater(argWithLength.length);
 
 	return (argWithLength.length === 0);
 }

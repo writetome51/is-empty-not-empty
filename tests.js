@@ -27,11 +27,6 @@ else
 	console.log('test 4 FAILED');
 
 
-if (isEmpty_notEmpty_1.notEmpty({length: false}))
-	console.log('test 4 passed');
-else
-	console.log('test 4 FAILED');
-
 
 // Argument must have a defined 'length' property:
 let errorTriggered = false;
@@ -63,3 +58,10 @@ try {
 }
 if (errorTriggered) console.log('test 7 passed');
 else console.log('test 7 FAILED');
+
+
+
+if (isEmpty_notEmpty_1.notEmpty({length: false}))
+	console.log('test 4 passed');
+else
+	console.log('test 4 FAILED');
