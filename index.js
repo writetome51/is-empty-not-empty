@@ -1,18 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", {value: true});
-var eIfNZOG = require('error-if-not-integer-zero-or-greater');
+import {errorIfNotInteger} from 'error-if-not-integer';
 
 
-function isEmpty(argWithLength) {
-
-	eIfNZOG.errorIfNotIntegerZeroOrGreater(argWithLength.length);
+export function isEmpty(argWithLength) {
+	errorIfNotInteger(argWithLength.length);
 
 	return (argWithLength.length === 0);
 }
-exports.isEmpty = isEmpty;
 
 
-function notEmpty(argWithLength) {
+export function notEmpty(argWithLength) {
 	return !(isEmpty(argWithLength));
 }
-exports.notEmpty = notEmpty;

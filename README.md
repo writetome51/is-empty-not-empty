@@ -1,38 +1,30 @@
-# isEmpty(argWithLengthProperty): boolean
+# isEmpty(arg): boolean
 
-To be considered empty, `argWithLengthProperty.length` must be 0.
+Returns true if `arg.length === 0`.
 
-# notEmpty(argWithLengthProperty): boolean
+# notEmpty(arg): boolean
 
-Returns `!(isEmpty(argWithLengthProperty))`
+Returns true if `arg.length > 0`.
 
 ## Examples
-```ts
+```js
 isEmpty([]);
 // --> true
 
 isEmpty('');
 // --> true
 
+isEmpty({length: 0});
+// --> true
+
 notEmpty([0]);
 // --> true
-
-notEmpty(' ');
-// --> true
-
-notEmpty({length: false});
-// Error: "Input must be a finite number of type 'number'"
-// The 'input' is the length property.
 ```
 
 ## Installation
 `npm i  @writetome51/is-empty-not-empty`
 
 ## Loading
-```ts
-// if using TypeScript:
+```js
 import { isEmpty, notEmpty } from '@writetome51/is-empty-not-empty';
-// if using ES5 JavaScript:
-var isEmpty = require('@writetome51/is-empty-not-empty').isEmpty;
-var notEmpty = require('@writetome51/is-empty-not-empty').notEmpty;
 ```
