@@ -1,8 +1,8 @@
-import {errorIfNotInteger} from 'error-if-not-integer';
+import {errorIfNotFiniteNumber} from 'error-if-not-finite-number';
 
 
 export function isEmpty(argWithLength) {
-	errorIfNotInteger(argWithLength.length);
+	errorIfNotFiniteNumber(argWithLength.length);
 
 	return (argWithLength.length === 0);
 }

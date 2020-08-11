@@ -19,6 +19,7 @@ else
 	console.log('test 3 FAILED');
 
 
+
 if (notEmpty('  '))
 	console.log('test 4 passed');
 else
@@ -56,3 +57,4 @@ try {
 }
 if (errorTriggered) console.log('test 7 passed');
 else console.log('test 7 FAILED');
+

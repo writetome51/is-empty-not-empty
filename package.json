@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/is-empty-not-empty",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "2 functions that check if the argument has a 'length' property with a value of 0",
   "type": "module",
   "main": "index.js",
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/writetome51/is-empty-not-empty#readme",
   "dependencies": {
-    "error-if-not-integer": "^2.0.0"
+    "error-if-not-finite-number": "^2.0.0"
   }
 }

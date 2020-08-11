@@ -4,7 +4,7 @@ Returns true if `arg.length === 0`.
 
 # notEmpty(arg): boolean
 
-Returns true if `arg.length > 0`.
+Returns true if `arg.length !== 0`.
 
 ## Examples
 ```js
