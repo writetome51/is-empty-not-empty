@@ -1,13 +1,9 @@
-import {errorIfNotFiniteNumber} from 'error-if-not-finite-number';
+import {noValue} from '@writetome51/has-value-no-value';
 
 
-export function isEmpty(argWithLength) {
-	errorIfNotFiniteNumber(argWithLength.length);
-
-	return (argWithLength.length === 0);
+export const isEmpty = (argWithLength) => {
+	if (noValue(argWithLength.length)) throw new Error(`Input must have a 'length' property`);
+	return argWithLength.length === 0;
 }
 
-
-export function notEmpty(argWithLength) {
-	return !(isEmpty(argWithLength));
-}
+export const notEmpty = (argWithLength) => !(isEmpty(argWithLength));

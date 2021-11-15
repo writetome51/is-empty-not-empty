@@ -17,8 +17,29 @@ isEmpty('');
 isEmpty({length: 0});
 // --> true
 
+isEmpty({length: -1});
+// --> false 
+
+isEmpty();
+// TypeError: "Cannot read property 'length' of undefined"
+
+isEmpty(0);
+// Error: "Input must have a 'length' property"
+
 notEmpty([0]);
 // --> true
+
+notEmpty('  ');
+// --> true
+
+notEmpty({length: -1})
+// --> true
+
+notEmpty();
+// TypeError: "Cannot read property 'length' of undefined"
+
+notEmpty(1);
+// Error: "Input must have a 'length' property"
 ```
 
 ## Installation

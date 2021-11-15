@@ -1,30 +1,28 @@
 import {isEmpty, notEmpty} from './index.js';
 
 
-if (isEmpty([]))
-	console.log('test 1 passed');
-else
-	console.log('test 1 FAILED');
+if (isEmpty([])) console.log('test 1 passed');
+else console.log('test 1 FAILED');
 
 
-if (isEmpty(''))
-	console.log('test 2 passed');
-else
-	console.log('test 2 FAILED');
+if (isEmpty('')) console.log('test 2 passed');
+else console.log('test 2 FAILED');
 
 
-if (notEmpty([0]))
-	console.log('test 3 passed');
-else
-	console.log('test 3 FAILED');
+if (isEmpty({length: 0})) console.log('test 2A passed');
+else console.log('test 2A FAILED');
 
 
+if (notEmpty([0])) console.log('test 3 passed');
+else console.log('test 3 FAILED');
 
-if (notEmpty('  '))
-	console.log('test 4 passed');
-else
-	console.log('test 4 FAILED');
 
+if (notEmpty('  ')) console.log('test 4 passed');
+else console.log('test 4 FAILED');
+
+
+if (notEmpty({length: -1})) console.log('test 4A passed');
+else console.log('test 4A FAILED');
 
 
 // Argument must have a defined 'length' property:
@@ -57,4 +55,14 @@ try {
 }
 if (errorTriggered) console.log('test 7 passed');
 else console.log('test 7 FAILED');
+
+
+errorTriggered = false;
+try {
+	notEmpty(0);
+} catch (e) {
+	errorTriggered = true;
+}
+if (errorTriggered) console.log('test 8 passed');
+else console.log('test 8 FAILED');
 
